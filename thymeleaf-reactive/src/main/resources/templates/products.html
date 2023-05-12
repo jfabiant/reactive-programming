@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Listado reactivo</title>
+</head>
+<body>
+
+	<h1>Thymeleaf + Spring Webflux</h1>
+
+	<table>
+		<tr th:each="product:${productList}">
+			<td th:text="${product.number}"></td>
+			<td th:text="${product.concept}"></td>
+			<td th:text="${product.price}"></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
